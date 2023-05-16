@@ -1,0 +1,154 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    width: 100%;
+    min-height: 100vh
+}
+#field {
+    width: 100%;
+    height: 100%;
+}
+#field td {
+    border: 1px solid black;
+    text-align: center;
+    font-weight: bold;
+}
+.red {
+    background: red;
+}
+.green {
+    background: green;
+}
+.blue {
+    background: blue;
+}
+.yellow {
+    background: yellow;
+}
+.darkmagenta {
+    background: darkmagenta;
+}
+.orange {
+    background: #c97302;
+}
+.cyan {
+    background: #00d1a0;
+}
+.bgr {
+    display: flex;
+    position: absolute;
+    background: black;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#easy_mode {
+    background-color: green;
+
+}
+#easy_mode,
+#medium_mode,
+#hard_mode {
+    align-items: center;
+    justify-content: center;
+    width: 70%;
+    height: 70%;
+    color: white;
+}
+#medium_mode {
+    background-color: darkgoldenrod;
+}
+#hard_mode {
+    background-color: red;
+}
+#buttons {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    margin: 1px;
+}
+#descr {
+    display: flex;
+    flex-direction: row;
+    color: gray;
+    text-align: center;
+}
+#descr p {
+    width: 33%;
+    border-right: 1px solid gray;
+}
+#counter { 
+    color: white;
+}
+.easy_mode {
+    width: 33%;
+    height: 33%;
+}
+.easy_mode,
+.medium_mode,
+.hard_mode {
+    background-color: white;
+}
+.medium_mode {
+    width: 66%;
+    height: 66%;
+}
+.hard_mode {
+    width: 99%;
+    height: 99%;
+}
+.easy_mode #field td {
+    width: 75px;
+    height: 75px;
+}
+.medium_mode #field td {
+    width: 50px;
+    height: 50px;
+}
+.hard_mode #field td {
+    width: 25px;
+    height: 25px;
+}
+#start {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: white;
+    border: 5px solid darkgray;
+    text-align: center;
+}
+@media (min-width: 1024px) {
+    #start {
+        width: 40vh;
+        height: 40vh;
+    }
+    #descr {
+        font-size: 20px;
+    }
+}
+@media (max-width: 768px) {
+    #start {
+        width: 35vh;
+        height: 35vh;
+    }
+    #descr {
+        font-size: 12px;
+    }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+    #start {
+        width: 35vh;
+        height: 35vh;
+    }
+    #descr {
+        padding: 1px;
+        font-size: 14px;
+    }
+}

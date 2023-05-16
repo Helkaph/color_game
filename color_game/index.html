@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Смена цветов</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script defer src="dist/bundle.js"></script>
+</head>
+<body>
+    <div class="bgr">
+        <div id="start">
+            <p>Игра в цвета</p>
+            <p>Условие победы: все плитки должны стать одного цвета</p>
+            <p>Выберите уровень сложности: </p>
+            <div id="buttons">
+                <button id="easy_mode">Лёгкий</button>
+                <button id="medium_mode">Средний</button>
+                <button id="hard_mode">Сложный</button>
+            </div>
+            <div id="descr">
+                <p>маленькое поле, 3 цвета, меняется цвет нажатой ячейки</p>
+                <p>среднее поле, 5 цветов, меняются цвета нажатой ячейки и соседних по горизонтали и вертикали</p>
+                <p>больше поле, 7 цветов, меняются цвета всех ячеек в радиусе 1 ячейки от нажатой </p>
+            </div>
+        </div>
+        <p id="counter"></p>
+        <div id="game_board">
+            <table id="field"></table>
+        </div>
+    </div>
+    
+</body>
+</html>
